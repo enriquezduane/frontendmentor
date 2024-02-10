@@ -4,19 +4,23 @@
 * {
   box-sizing: border-box
 }
+
 :root {
-    --nutmeg: hsl(14, 45%, 36%);
-    --dark-raspberry: hsl(332, 51%, 32%);
-    --white: hsl(0, 0%, 100%);
-    --rose-white: hsl(330, 100%, 98%);
-    --eggshell: hsl(30, 54%, 90%);
-    --light-grey: hsl(30, 18%, 87%);
-    --wenge-brown: hsl(30, 10%, 34%);
-    --dark-charcoal: hsl(24, 5%, 18%);
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+  --light-purple: hsl(322, 80%, 98%);
+  --brown: hsl(13, 17%, 44%);
 }
 
 :root {
   --body-font-size: 16px;
+  --border-radius: 10px;
   --font-family-young-serif: 'Young Serif', serif;
   --font-family-outfit: 'Outfit', sans-serif;
 }
@@ -41,8 +45,90 @@
   font-weight: 700;
 }
 
-body {
-  background-color: var(--eggshell);
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
 }
 
-.flex-container {
+body {
+  background-color: var(--eggshell);
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 50%;
+  background-color: var(--white);
+  padding: 20px;
+  padding: 45px;
+  border-radius: var(--border-radius);
+}
+
+.card__section {
+  background-color: var(--light-purple);
+  border-radius: var(--border-radius);
+  padding: 10px 20px;
+}
+
+.card__section__header {
+  color: var(--dark-raspberry);
+}
+
+.card__list {
+  padding-left: 15px;
+}
+
+.card__list li {
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+.card__list li p {
+  margin: 5px;
+}
+
+.card__list li::marker {
+  color: var(--dark-raspberry);
+}
+
+table {
+  font-size: 20px;
+  width: 100%;
+}
+
+table tr {
+  display: block;
+  border-bottom: var(--light-grey) 1px solid;
+  padding: 10px;
+}
+
+table tr:last-child {
+  border-bottom: none;
+}
+
+table tr td:first-child {
+  padding-left: 40px;
+  width: 400px;
+}
+
+table tr td:last-child {
+  color: var(--nutmeg);
+  font-family: var(--font-family-outfit);
+  font-weight: 700;
+}
+
+hr {
+  color: var(--light-grey);
+}
+
+h2,
+h3 {
+  color: var(--nutmeg)
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+  font-family: var(--font-family-outfit);
+}
