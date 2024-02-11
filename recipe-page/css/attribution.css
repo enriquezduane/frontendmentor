@@ -1,0 +1,16 @@
+.attribution {
+  font-family: var(--font-family-outfit);
+
+  & a {
+    color: var(--nutmeg);
+    text-decoration: none;
+
+    &:hover {
+      color: var(--dark-raspberry);
+    }
+
+    &:visited {
+      color: var(--dark-raspberry);
+    }
+  }
+}

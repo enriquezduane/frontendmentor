@@ -5,6 +5,7 @@
   width: 100%;
   max-width: 45rem;
   padding: 2rem;
+  margin-bottom: 5rem;
 }
 
 .recipe-card__image {
@@ -29,7 +30,7 @@
   font-family: var(--font-family-outfit);
   padding: 1.5rem;
 
-  &h3 {
+  & h3 {
     margin-top: 0;
     font-weight: 700;
     color: var(--dark-raspberry);
@@ -40,7 +41,7 @@
   padding-left: 1.2rem;
   font-family: var(--font-family-outfit);
 
-  &li {
+  & li {
     &::marker {
       color: var(--dark-raspberry);
     }
@@ -50,7 +51,7 @@
 .recipe-card__list--nutmeg {
   padding-left: 1.5rem;
 
-  &li {
+  & li {
 
     &::marker {
       color: var(--nutmeg);
@@ -72,12 +73,12 @@
   width: 100%;
   font-family: var(--font-family-outfit);
 
-  &tr {
+  & tr {
     display: block;
     border-bottom: 0.08rem solid var(--light-grey);
   }
 
-  &td {
+  & td {
     width: 15rem;
     padding: 0.5rem;
 
