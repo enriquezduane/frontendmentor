@@ -1,0 +1,95 @@
+.recipe-card {
+  margin-top: 7rem;
+  background-color: var(--white);
+  border-radius: var(--border-radius);
+  width: 100%;
+  max-width: 45rem;
+  padding: 2rem;
+}
+
+.recipe-card__image {
+  border-radius: var(--border-radius);
+  max-width: 100%;
+  height: auto;
+}
+
+.recipe-card__title {
+  font-family: var(--font-family-young-serif);
+  font-weight: 700;
+}
+
+.recipe-card__description {
+  font-family: var(--font-family-outfit);
+  padding-bottom: 1rem;
+}
+
+.recipe-card__section {
+  border-radius: var(--border-radius);
+  background-color: var(--light-purple);
+  font-family: var(--font-family-outfit);
+  padding: 1.5rem;
+
+  &h3 {
+    margin-top: 0;
+    font-weight: 700;
+    color: var(--dark-raspberry);
+  }
+}
+
+.recipe-card__list {
+  padding-left: 1.2rem;
+  font-family: var(--font-family-outfit);
+
+  &li {
+    &::marker {
+      color: var(--dark-raspberry);
+    }
+  }
+}
+
+.recipe-card__list--nutmeg {
+  padding-left: 1.5rem;
+
+  &li {
+
+    &::marker {
+      color: var(--nutmeg);
+    }
+  }
+}
+
+.recipe-card__heading {
+  font-family: var(--font-family-young-serif);
+  color: var(--nutmeg);
+}
+
+.recipe-card__divider {
+  color: var(--light-grey);
+  opacity: 0.5;
+}
+
+.recipe-card__table {
+  width: 100%;
+  font-family: var(--font-family-outfit);
+
+  &tr {
+    display: block;
+    border-bottom: 0.08rem solid var(--light-grey);
+  }
+
+  &td {
+    width: 15rem;
+    padding: 0.5rem;
+
+    &:first-child {
+      padding-left: 1.8rem;
+      color: var(--wenge-brown);
+    }
+
+    &:last-child {
+      padding-left: 5.5rem;
+      font-weight: 700;
+      color: var(--nutmeg);
+    }
+  }
+}
